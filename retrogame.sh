@@ -55,7 +55,7 @@ if [ $RETROGAME_SELECT -lt 9 ]; then
 
 	echo -n "Downloading, installing retrogame..."
 	# Download to tmpfile because might already be running
-	curl -f -s -o /tmp/retrogame https://raw.githubusercontent.com/adafruit/Adafruit-Retrogame/master/retrogame
+	curl -f -s -o /tmp/retrogame https://github.com/sergiopoverony/Retrogame/raw/branch/retrogame
 	if [ $? -eq 0 ]; then
 		mv /tmp/retrogame /usr/local/bin
 		chmod 755 /usr/local/bin/retrogame
@@ -65,7 +65,8 @@ if [ $RETROGAME_SELECT -lt 9 ]; then
 	fi
 
 	echo -n "Downloading, installing retrogame.cfg..."
-	curl -f -s -o /boot/retrogame.cfg https://raw.githubusercontent.com/adafruit/Adafruit-Retrogame/master/configs/retrogame.cfg.${CONFIGNAME[$RETROGAME_SELECT-1]}
+	curl -f -s -o /boot/retrogame.cfg https://github.com/sergiopoverony/Retrogame/raw/branch/configs/retrogame.cfg.${CONFIGNAME[$RETROGAME_SELECT-1]}
+	vmu
 	if [ $? -eq 0 ]; then
 		echo "OK"
 	else
