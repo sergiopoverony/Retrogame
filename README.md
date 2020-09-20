@@ -1,6 +1,6 @@
-Adafruit-Retrogame
+Cloned from Adafruit-Retrogame
 ==================
-
+This is configure for my PCB and my GamePad controls
 Raspberry Pi GPIO-to-virtual-keyboard utility for classic game emulators.
 
 How-to: https://learn.adafruit.com/retro-gaming-with-raspberry-pi
