@@ -8,23 +8,21 @@
 # A '#' character indicates a comment to end-of-line.
 # File can be edited "live," no need to restart retrogame!
 
-# Here's a pin for Game boy Advance configuration:
+# Here's a pin configuration for the Game boy Advance project:
 
-LEFT      10  # Joypad left
-RIGHT     11  # Joypad right
-UP        13  # Joypad up
-DOWN      8  # Joypad down
-LEFTCTRL  37  # 'A' button
-LEFTALT   40  # 'B' button
-Z         38  # 'X' button
-X         35  # 'Y' button
-A         15  # Left shoulder button
-S         33  # Right shoulder button
-SPACE      32  # 'Select' button
-ENTER      26  # 'Start' button
-ESC    32 26  # Hold Start+Select to exit ROM
-
-
+LEFT      15  # Joypad left
+RIGHT     17  # Joypad right
+UP        22  # Joypad up
+DOWN      14  # Joypad down
+LEFTCTRL  26  # 'A' button
+LEFTALT   21  # 'B' button
+Z         20  # 'X' button
+X         19  # 'Y' button
+SPACE     12  # 'Select' button
+ENTER      7  # 'Start' button
+A         22  # Left shoulder button
+S         13  # Right shoulder button
+ESC       12 7  # Exit ROM; PiTFT Button 1
 
 # For configurations with few buttons (e.g. Cupcade), a key can be followed
 # by multiple pin numbers.  When those pins are all held for a few seconds,
