@@ -55,18 +55,18 @@ if [ $RETROGAME_SELECT -lt 4 ]; then
 		fi
 	fi
 
-	echo -n "Downloading, installing retrogame..."
+	echo -n "Installing retrogame..."
 	# Download to tmpfile because might already be running
-	curl -f -s -o /tmp/retrogame https://github.com/sergiopoverony/Retrogame/raw/branch/retrogame
+        rm -rf /usr/local/bin/retrogame	
+	cp -rf ./retrogame /usr/local/bin/retrogame
 	if [ $? -eq 0 ]; then
-		mv /tmp/retrogame /usr/local/bin
 		chmod 755 /usr/local/bin/retrogame
 		echo "OK"
 	else
 		echo "ERROR"
 	fi
 
-	echo -n "Downloading, installing retrogame.cfg..."
+	echo -n "Installing retrogame.cfg..."
         rm -rf /boot/retrogame.cfg
         cp -rf ./configs/retrogame.cfg.${CONFIGNAME[$RETROGAME_SELECT-1]} /boot/retrogame.cfg
 	if [ $? -eq 0 ]; then
