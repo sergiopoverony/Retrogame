@@ -43,7 +43,7 @@ RETROGAME_SELECT=$?
 # order to each of the above selections (e.g. retrogame.cfg.pigrrl2):
 CONFIGNAME=(pocket vmu advance)
 
-if [ $RETROGAME_SELECT -lt 3 ]; then
+if [ $RETROGAME_SELECT -lt 4 ]; then
 	if [ -e /boot/retrogame.cfg ]; then
 		echo "/boot/retrogame.cfg already exists."
 		echo "Continuing will overwrite file."
