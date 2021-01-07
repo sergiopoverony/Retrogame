@@ -68,7 +68,6 @@ if [ $RETROGAME_SELECT -lt 4 ]; then
 
 	echo -n "Downloading, installing retrogame.cfg..."
 	curl -f -s -o /boot/retrogame.cfg https://github.com/sergiopoverony/Retrogame/raw/branch/configs/retrogame.cfg.${CONFIGNAME[$RETROGAME_SELECT-1]}
-	vmu
 	if [ $? -eq 0 ]; then
 		echo "OK"
 	else
