@@ -8,22 +8,21 @@
 # A '#' character indicates a comment to end-of-line.
 # File can be edited "live," no need to restart retrogame!
 
-# Here's a Game boy Advance configuration:
+# Here's a pin for Game boy Advance configuration:
 
-LEFT      15  # Joypad left
-RIGHT     17  # Joypad right
-UP        27  # Joypad up
-DOWN      27  # Joypad down
-LEFTCTRL  26  # 'A' button
-LEFTALT   21  # 'B' button
-Z         20  # 'X' button
-X         19  # 'Y' button
-GND        6  # Spare ground point for 'Y' button
-A         22  # Left shoulder button
-S         13  # Right shoulder button
-SPACE      12  # 'Select' button
-ENTER      7  # 'Start' button
-ESC    12 7  # Hold Start+Select to exit ROM
+LEFT      10  # Joypad left
+RIGHT     11  # Joypad right
+UP        13  # Joypad up
+DOWN      8  # Joypad down
+LEFTCTRL  37  # 'A' button
+LEFTALT   40  # 'B' button
+Z         38  # 'X' button
+X         35  # 'Y' button
+A         15  # Left shoulder button
+S         33  # Right shoulder button
+SPACE      32  # 'Select' button
+ENTER      26  # 'Start' button
+ESC    32 26  # Hold Start+Select to exit ROM
 
 
 
