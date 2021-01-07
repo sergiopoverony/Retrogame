@@ -36,9 +36,8 @@ echo
 echo "Select configuration:"
 selectN "Pocket" \
         "VMU Zero" \
-        "Advance" \	
-        "Quit without installing" \
-
+        "Advance" \
+        "Quit without installing"
 RETROGAME_SELECT=$?
 # These are the retrogame.cfg.* filenames on Github corresponding in
 # order to each of the above selections (e.g. retrogame.cfg.pigrrl2):
