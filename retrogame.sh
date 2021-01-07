@@ -34,14 +34,16 @@ echo "Run time <1 minute. Reboot recommended."
 echo
 
 echo "Select configuration:"
-selectN "DMG Pocket" \
+selectN "Game Boy Pocket" \
         "VMU Zero" \
+        "Game Boy Advance" \	
+        "Quit without installing"
 RETROGAME_SELECT=$?
 # These are the retrogame.cfg.* filenames on Github corresponding in
 # order to each of the above selections (e.g. retrogame.cfg.pigrrl2):
-CONFIGNAME=(pocket vmu)
+CONFIGNAME=(pocket vmu advance)
 
-if [ $RETROGAME_SELECT -lt 9 ]; then
+if [ $RETROGAME_SELECT -lt 3 ]; then
 	if [ -e /boot/retrogame.cfg ]; then
 		echo "/boot/retrogame.cfg already exists."
 		echo "Continuing will overwrite file."
