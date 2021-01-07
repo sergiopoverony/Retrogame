@@ -8,7 +8,7 @@
 # A '#' character indicates a comment to end-of-line.
 # File can be edited "live," no need to restart retrogame!
 
-# Here's a 6-button configuration:
+# Here's a Game boy Advance configuration:
 
 LEFT      15  # Joypad left
 RIGHT     17  # Joypad right
