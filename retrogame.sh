@@ -34,9 +34,9 @@ echo "Run time <1 minute. Reboot recommended."
 echo
 
 echo "Select configuration:"
-selectN "Game Boy Pocket" \
+selectN "Pocket" \
         "VMU Zero" \
-        "Game Boy Advance" \	
+        "Advance" \	
         "Quit without installing"
 RETROGAME_SELECT=$?
 # These are the retrogame.cfg.* filenames on Github corresponding in
