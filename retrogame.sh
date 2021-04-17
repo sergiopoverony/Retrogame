@@ -37,11 +37,12 @@ echo "Select configuration:"
 selectN "Pocket" \
         "VMU Zero" \
         "Advance" \
+	"Advance SP" \
         "Quit without installing"
 RETROGAME_SELECT=$?
 # These are the retrogame.cfg.* filenames on Github corresponding in
 # order to each of the above selections (e.g. retrogame.cfg.pigrrl2):
-CONFIGNAME=(pocket vmu advance)
+CONFIGNAME=(pocket vmu advance sp)
 
 if [ $RETROGAME_SELECT -lt 4 ]; then
 	if [ -e /boot/retrogame.cfg ]; then
